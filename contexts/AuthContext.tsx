@@ -52,7 +52,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
         path: '/' //diz quais caminhos da aplicação vai ter acesso ao cookie
       });
 
-      setCookie(undefined, 'nextauth.refreshToken', token, {
+      setCookie(undefined, 'nextauth.refreshToken', refreshToken, {
         maxAge: 60 * 60 * 24 * 30, 
         path: '/' 
       });
